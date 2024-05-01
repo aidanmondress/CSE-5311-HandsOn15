@@ -59,11 +59,11 @@ void dijkstra(int set[N][N], int src)
  
 int main()
 {
-    int nodes[V][V] = {0, 10, 0, 5, 0},
+    int nodes[V][V] = {{0, 10, 0, 5, 0},
                       {0, 0, 1, 2, 0},
                       {0, 0, 0, 0, 4},
                       {0, 3, 9, 0, 2},
-                      {7, 0, 6, 0, 0};
+                      {7, 0, 6, 0, 0}};
  
     dijkstra(nodes, 0);
     return 0;
