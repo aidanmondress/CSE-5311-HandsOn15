@@ -16,7 +16,7 @@ int minDistance(int dis[], bool set[])
     return i;
 }
 
-void printSolution(int dis[])
+void printAns(int dis[])
 {
     printf("Vertex:\t");
     for(int i = 0; i < N; i++)
@@ -54,7 +54,7 @@ void dijkstra(int set[N][N], int src)
                 dis[v] = dis[u] + set[u][v];
           }
     }
-    printSolution(dis);
+    printAns(dis);
 }
  
 int main()
